@@ -1,0 +1,70 @@
+
+/*加兼容前缀*/
+/*@mixin pre($key, $value){
+	-webkit-#{$key}: $value;
+    -moz-#{$key}: $value;
+    -ms-#{$key}: $value;
+    -o-#{$key}: $value;
+    #{$key}: $value;
+}*/
+/*背景图片地址和大小*/
+@mixin bis($url) { 
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*宽高*/
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+/*字体大小、行高、字体*/
+@mixin font_col($size, $line-height, $color) {  
+	font-size: $size;
+	line-height: $line-height;
+	color: $color;
+}
+
+/*字体大小、行高、字体*/
+@mixin font($size, $line-height, $family: 'Microsoft YaHei') {  
+	/*font: #{$size}/#{$line-height} $family;*/
+}
+
+/*字体大小，颜色*/
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+
+/*=========================*/
+/*         占位符定义        */
+/*=========================*/
+
+/*水平居中*/
+.align_center{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*@include pre(transform, translate(-50%, 0));*/
+}
+
+/*垂直居中*/
+%vertical_middle{
+    position: absolute;
+    top: 50%;
+    /*@include pre(transform, translate(0, -50%));*/
+}
+
+/*水平垂直居中*/
+%center_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*@include pre(transform, translate(-50%, -50%));*/
+}
+
+

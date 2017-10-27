@@ -1,0 +1,26 @@
+
+@import './_reset.css';
+
+/*=========================*/
+/*     通用元素文件          */
+/*=========================*/
+
+.absolute{
+    position: absolute;
+}
+
+.block{
+    display: block;
+}
+
+.margin_0_auto{
+    margin: 0 auto;
+}
+
+.w_100{
+    width: 100%;
+}
+
+.bg_white{
+    background-color: #fff;
+}
