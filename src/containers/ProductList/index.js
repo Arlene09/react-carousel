@@ -8,6 +8,8 @@ import { requestProductList } from './actions'
 import LinkItem from './LinkItem'
 import Carousel from '../../components/carousel';
 
+import style from './index.css';
+
 class ProductList extends React.Component {
 
 	constructor(){
@@ -40,6 +42,7 @@ class ProductList extends React.Component {
 
 		return (
 			<div>
+				<h1 className="title">react 轮播图</h1>
 				<Carousel interval={100} number={slides.length} boxStyle="content" interval={4000}  slides= {slides} >  
           		</Carousel> 
 				{

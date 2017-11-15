@@ -1,5 +1,5 @@
 
-@import './base/_mixin.css';
+/*@import './base/_mixin.css';*/
 
 @mixin wh($width, $height){
   width: $width;
@@ -29,8 +29,10 @@
 }
 
 
+
+
 .content{
-  width: 23.93rem;/* 670px */
+  width: 100%;
   height: 15.36rem;/* 430px */
   position: relative;
   margin: 0 auto;
@@ -51,14 +53,22 @@
       display: inline-block;
       width: 23.93rem;/* 670px */
       height: 100%;
+      margin-left: .71rem;
+      &:nth-of-type(1){
+        margin-left: 1.43rem;
+      }
     }
     .slider__slide{
       width: 23.93rem;/* 670px */
       height: 100%;
       max-height: 15.36rem;/* 430px */
+      border-radius: .36rem;
+      -webkit-border-radius: .36rem;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       z-index: 1;
+      background-color: rgba(0,0,0,.2);
     }
   }
 }
@@ -67,17 +77,19 @@
   left: 0;
 }
 .twoPosition{
-  left: -23.93rem;/* 670px */
+  left: -24.64rem;/* 690px */
 }
 .therePosition{
-  left: -47.86rem;
+  left: -49.29rem;
 }
 .fourPosition{
-  left: -71.79rem;
+  left: -73.93rem;
 }
 .fivePosition{
-  left: -95.71rem;
+  left: -98.57rem;
 }
+
+
 
 .leftIcon,
 .rightIcon{
@@ -85,12 +97,13 @@
   height: 1.79rem;
   background: #cd4d5c;
   position: absolute;
+  bottom: 0;
   left: 0;
-  top: 50%;
   text-align: center;
   line-height: 1.79rem;
   z-index: 999;
 }
 .rightIcon{
-  left: 21.8rem;
+  left: 24.5rem;
 }
+

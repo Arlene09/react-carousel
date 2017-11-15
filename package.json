@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "1.0.0",
-  "description": "for qyl app users' feedback h5 page",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.dev.conf.js --watch",

@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-import '../../static/styles/carousel.css'
+import './carousel.css'
 
 import Slide from './slide.js'
 
@@ -50,7 +50,7 @@ const carousel = React.createClass({
   },
   playRight(indexIn){
       let index=indexIn?indexIn:this.state.activeIndex+1;
-      console.log(index);
+      // console.log(index);
       if(index>this.props.number-1){
         index=0;
       }
@@ -60,7 +60,7 @@ const carousel = React.createClass({
   },
   playLeft(indexIn){
       let index=indexIn?indexIn:this.state.activeIndex-1;
-      console.log(index);
+      // console.log(index);
       if(index<0){
         index=this.props.number-1;
       }

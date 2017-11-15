@@ -44,11 +44,6 @@ export default function request(url, options) {
     setting.headers = {};
   }
   setting.headers['Content-Type'] = 'application/json';
-  if(window.qylAct && window.qylAct.getSystemInfo){
-    let systemInfo = JSON.parse(window.qylAct.getSystemInfo())
-    setting.headers['access-token'] = systemInfo.token
-    setting.headers['x-unique-client'] = systemInfo.getUnique
-  }
 
   options = {...options, ...setting};
 
